@@ -19,10 +19,10 @@ fi
 if [ -z "${proxy_port}" ]; then
         case $host_coin in
                 "BTC")
-                        proxy_port=18001
+                        no_network_port=18001
                         ;;
                 "ETH")
-                        proxy_port=18005
+                        no_network_port=18005
                         ;;
                 *)
                         echo "$host_coin not support by proxy yet!"

@@ -11,7 +11,7 @@ docker_name=no_net_work_pool_eth
 host_coin=`echo $host_coin| tr 'a-z' 'A-Z'`
 #  docker_name 未填写则默认 proxy_$$host_coin
 if [ -z "${docker_name}" ]; then
-  docker_name=proxy_`echo $host_coin| tr 'A-Z' 'a-z'`
+  docker_name=no_net_work_pool_`echo $host_coin| tr 'A-Z' 'a-z'`
   echo "docker_name not set, default value: ${docker_name}"
 fi
 

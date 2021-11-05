@@ -48,5 +48,5 @@ docker run -it --restart always -d \
         --log-opt mode=non-blocking --log-opt max-buffer-size=4m --log-driver journald \
         -v /work:/work \
         --name ${docker_name} \
-        -p ${no_network_port}:1801 \
+        -p ${no_network_port}:1800 \
         ${docker_version}

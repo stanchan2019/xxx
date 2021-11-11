@@ -82,7 +82,7 @@ fi
 
 docker system prune -a -f
 
-docker_version=registry.cn-beijing.aliyuncs.com/poolin_public/proxy:latest
+docker_version=registry.cn-beijing.aliyuncs.com/poolin_public/proxy:latest_t
 docker pull ${docker_version}
 
 docker stop -t 3 ${docker_name} || /bin/true
@@ -105,4 +105,5 @@ docker run -it --restart always -d \
         -v /work:/work \
         --name ${docker_name} \
         -p ${proxy_port}:1801 \
+        -p 18001:1812 \
         ${docker_version}

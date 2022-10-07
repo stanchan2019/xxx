@@ -1,6 +1,4 @@
-# Poolin Smart Agent Usage
-
-## 币印新版智能代理特色
+## xx新版智能代理特色
 
 - 外网网络连接降低至个位数
 
